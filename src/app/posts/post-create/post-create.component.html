@@ -1,6 +1,6 @@
 <mat-card>
      
-    <form (submit)="onSavePost(postForm)" #postForm="ngForm" *ngIf="!isLoading">
+    <form (submit)="onSavePost(postForm)" #postForm="ngForm" >
       <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="postsService.selectedPost.$key">
       <mat-form-field>
         <input
